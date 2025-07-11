@@ -1,0 +1,169 @@
+* { box-sizing: border-box; }
+body { background-color: #55485a;
+       color: #f3ebed; 
+       font-family: Arial, Helvetica, sans-serif; } 
+
+#wrapper{   background-color: #55485a;           
+			background-image: linear-gradient(to bottom,
+                               #495c65, #2a326e ); }    
+header { background-color: #171515;
+         color: #FFFFFF;
+         height: 100px;
+         text-align: center; }
+nav { text-align: center;
+      font-weight: bold;
+      padding: 0;
+      font-size: 120%; }	
+h1 { margin-bottom: 0;
+     margin-top: 0;
+     font-family: Georgia, 'Times New Roman', serif;
+     padding-top: 0.5em;
+     padding-bottom: .05em;
+     letter-spacing: 0.25em; }        
+h2 { color: #f3ebed;
+
+     font-family: Georgia, 'Times New Roman', serif;}
+h3 { color: #f3ebed;}     
+     	  	  
+dt { color: #f3ebed; }
+.resort { color: #1976D2; font-weight: bold;
+    } 
+.link-color { color: #1976D2; }
+	 
+header a { text-decoration: none;
+         }
+header a:link {color: #FFFFFF; }  
+header a:visited { color: #FFFFFF; }
+header a:hover { color: #55485a; } 		 		
+nav a { text-decoration: none;
+        transition: color 2s ease-out; }
+         		 
+nav ul { list-style-type: none;
+         margin: 0;
+		 padding-left: 0;
+         font-size: 1.2em; } 
+nav li { border-bottom: 1px solid #002171; }
+
+nav a:link {color: black; }  
+nav a:visited { color:  black; }
+nav a:hover { color: rgb(150, 27, 27); }     		 
+h1, h2 { font-family: 
+             Georgia, "Times New Roman", serif; }
+h3 { font-family: 
+             Georgia, "Times New Roman", serif; color: #5c7fa3 }
+
+main ul { list-style-image: url(marker.gif); }			 
+footer { text-align: center;
+         font-style: italic;
+		 font-size: 75%;
+		 font-family: Georgia, "Times New Roman", serif;
+         padding: 2em;
+         background-color: #121111;
+         color: #f3ebed; }
+
+.email-link  { color: #f3ebed;  }       
+         
+main { 	background-color: #121111;
+        padding: 1px 20px 20px 20px;
+        display: block;
+        padding-left: 30px;	
+        overflow: auto;
+        }		
+#contact { font-size: 90%; }	
+	
+#homehero { height: 300px;
+            background-image: url(friedrice2.JPG); 			
+            background-repeat: no-repeat; 
+            background-size: 100% 100%; }
+#ourserviceshero { height: 300px;
+            background-image: url(pep-pizza3.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;	}		
+#aboutushero { height: 300px;
+             background-image: url(chixsandwich3.jpg);
+	     background-repeat: no-repeat;
+             background-size: 100% 100%; }
+        			
+table { border-collapse: collapse; }
+
+td, th { padding: 0.5em;
+         border: 2px solid #3399CC;}
+
+td { text-align: center; }
+
+.text { text-align: left } 
+
+tr:nth-of-type(odd) { background-color:#55485a; }	
+
+form { display: flex;
+       flex-direction: column;
+	   flex-wrap: nowrap; } 
+
+input, textarea { margin-bottom: 0.5em; }	
+
+video { float: right;
+        margin: 1em;}
+
+
+@media (min-width: 600px) {  
+        nav ul { display: flex;
+	         flex-direction: row;
+		 flex-wrap: nowrap;
+                 justify-content: space-around; }
+                 
+nav li { border-bottom: none; }
+
+section { margin-left: 2em;
+          margin-right: 2em;
+          flex: 1;  }
+
+.flow { display: flex;
+        flex-direction: row; } 
+        
+form {  display: grid;
+        grid-template-rows: auto;
+	grid-template-columns: 6em 1fr;
+	grid-gap: 1em; gap: 1em;
+        max-width: 30em; width: 60%; }
+        
+input[type="submit"] { grid-column: 2 / 3;
+                       width: 9em; }         
+                       
+@media (min-width: 1024px) {
+   #wrapper { 
+        margin: auto;
+        width: 80%;
+        border: 1px solid #002171;
+        box-shadow: 3px 3px 3px #002171;
+   }   
+ 
+nav { text-align: left;
+      padding-left: 1em; }
+
+@supports (display: grid) 
+   { nav ul { flex-direction: column; 
+              padding-top: 1em; }      
+
+.hero { grid-area: hero; } 
+
+header { grid-area: header; }
+
+nav { grid-area: nav; }
+
+main { grid-area: main; }
+
+footer { grid-area: footer; }
+
+#wrapper { display: grid;
+           grid-template: 
+           "header header"
+           "nav hero"
+           "nav main"
+           "nav footer"
+           / 180px 1fr; }}
+
+   }                 
+}
+				 
+
+	
